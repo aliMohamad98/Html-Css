@@ -1,0 +1,78 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+.content{
+    position: relative;
+    background-color: #e9d2d2;
+    height: 100vh;
+  
+}
+.container{
+    background-color: #eee8e8;
+    margin: 0 auto ;
+    display: grid;
+    max-width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 5px;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+.container .text{
+    padding: 20px;
+}
+.container .image img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    
+}
+
+.container .text span{
+    font-weight: 600;
+    color: #777;
+    letter-spacing: 4px;
+}
+.container .text header{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1;
+    padding-top: 10px;
+}
+.container .text p{
+    color: #777;
+    font-weight: 600;
+    padding-top: 50px;
+    
+}
+.container .text .prices{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.container .text .prices .price{
+    color: rgba(4, 136, 4, 0.829);
+}
+.container .text .prices .last-price{
+    text-decoration-line: line-through;
+    font-size: 25px;
+    color: #777;
+
+}
+.container .text:last-of-type button {
+    color: white;
+    border-radius: 10px;
+    margin: 25px auto;
+    display: grid;
+    width: 250px;
+ 
+}
+.container .text  .attribution{
+    font-weight: 450;
+    margin-top: 40px;
+}
